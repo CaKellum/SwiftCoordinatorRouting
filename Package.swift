@@ -10,10 +10,10 @@ let package = Package(
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
             name: "SwiftRouting",
-            targets: ["SwiftRouting"]),
+            targets: ["SwiftRouting"])
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0"),
+        .package(url: "https://github.com/apple/swift-docc-plugin", from: "1.0.0")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -22,6 +22,6 @@ let package = Package(
             name: "SwiftRouting"),
         .testTarget(
             name: "SwiftRoutingTests",
-            dependencies: ["SwiftRouting"]),
+            dependencies: ["SwiftRouting"])
     ]
 )

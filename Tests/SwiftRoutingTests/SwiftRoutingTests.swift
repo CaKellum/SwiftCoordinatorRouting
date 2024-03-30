@@ -14,7 +14,7 @@ final class SwiftRoutingTests: XCTestCase {
 
     func testAddingQueryPrams() {
         let path = "/home"
-        XCTAssert(path.addQueryParams(params: ["param": "value"]) == "/home?param=value", 
+        XCTAssert(path.addQueryParams(params: ["param": "value"]) == "/home?param=value",
                   "not adding params correctly")
     }
 
