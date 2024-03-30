@@ -13,7 +13,7 @@ public extension String {
     
     /// true if is string is valid URL, false otherwise
     var isValidURL: Bool {
-        if #available(iOS 17.0, *) {
+        if #available(iOS 17.0, macOS 14.0, *) {
             URL(string: self, encodingInvalidCharacters: false) != nil
         } else {
             URL(string: self) != nil
