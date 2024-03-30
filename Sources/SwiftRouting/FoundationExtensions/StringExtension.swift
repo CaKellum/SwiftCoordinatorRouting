@@ -1,7 +1,7 @@
 import Foundation
 
 public extension String? {
-    
+
     ///  is true if value of string is empty or nil, flase otherwise
     var isNilOrEmpty: Bool { self?.isEmpty ?? true }
 
@@ -10,7 +10,7 @@ public extension String? {
 }
 
 public extension String {
-    
+
     /// true if is string is valid URL, false otherwise
     var isValidURL: Bool {
         if #available(iOS 17.0, macOS 14.0, *) {
@@ -19,7 +19,7 @@ public extension String {
             URL(string: self) != nil
         }
     }
-    
+
     /// Adds percent encoded query parameters to the end of the strings value
     ///
     ///  ```swift
@@ -36,7 +36,7 @@ public extension String {
         guard let completeUrl = url?.url?.absoluteString else { return nil }
         return completeUrl
     }
-    
+
     /// Returns current value with out the query parameters if there are any
     ///
     ///  ```swift
@@ -50,7 +50,6 @@ public extension String {
         return url.path
     }
 
-    
     /// Returns the query params if present or an empty dictionary
     ///
     /// ```swift
