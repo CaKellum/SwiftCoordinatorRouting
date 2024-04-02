@@ -19,7 +19,9 @@ let package = Package(
         // Targets are the basic building blocks of a package, defining a module or a test suite.
         // Targets can depend on other targets in this package and products from dependencies.
         .target(
-            name: "SwiftRouting"),
+            name: "SwiftRouting",
+            path: "Sources",
+            resources: [.process("Resources/PrivacyInfo.xcprivacy")]),
         .testTarget(
             name: "SwiftRoutingTests",
             dependencies: ["SwiftRouting"])
